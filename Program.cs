@@ -30,7 +30,8 @@ namespace Laba4
             collection.EditFilds((Entryfield)MenuEdit.SelectFildsToEdit());
             Console.WriteLine(collection);
 
-            FileExtensions.RecordToFile(collection.Items);
+            string filePath = @"..\..\..\FileExtensions\collection.csv";
+            FileExtensions.RecordToFile(collection.Items, filePath);
         }
     }
 }

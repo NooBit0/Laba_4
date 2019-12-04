@@ -4,7 +4,7 @@ namespace Laba4
 {
     internal static class EditItem
     {
-        private const int _rightBorder = 12;
+        private const int RightBorder = 12;
 
         public static void EditFilds(this Collection collection, Entryfield choice)
         {
@@ -25,7 +25,7 @@ namespace Laba4
                     break;
                 case Entryfield.EntryDate:
                     Console.WriteLine("Input date entry (0-12)");
-                    collection.Items[index].EntryDate = InputExtensions.InputIntVariable(_rightBorder);
+                    collection.Items[index].EntryDate = InputExtensions.InputIntVariable(RightBorder);
                     break;
                 case Entryfield.ContentInVolume:
                     Console.WriteLine("Input content in Volume");

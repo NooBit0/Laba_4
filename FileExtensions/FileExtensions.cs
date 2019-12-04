@@ -26,11 +26,11 @@ namespace Laba4
             }
         }
 
-        internal static void RecordToFile(Collection.AgronomistRecord[] arr)
+        internal static void RecordToFile(Collection.AgronomistRecord[] arr, string filePath)
         {
             try
             {
-                using (var writer = new StreamWriter(@"..\..\..\FileExtensions\collection.csv"))
+                using (var writer = new StreamWriter(filePath))
                 using (var csv = new CsvWriter(writer))
                 {
                     csv.WriteRecords(arr);

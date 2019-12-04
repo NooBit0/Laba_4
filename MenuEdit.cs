@@ -4,7 +4,7 @@ namespace Laba4
 {
     internal static class MenuEdit
     {
-        private const int _rightBorder = 6;
+        private const int RightBorder = 6;
 
         public static int SelectItemToEdit(Collection contents)
         {
@@ -17,7 +17,7 @@ namespace Laba4
         public static int SelectFildsToEdit()
         {
             ShowEditList();
-            return InputExtensions.InputIntVariable(_rightBorder);
+            return InputExtensions.InputIntVariable(RightBorder);
         }
 
         public static void ShowEditList()

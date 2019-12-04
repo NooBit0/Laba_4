@@ -4,7 +4,7 @@ namespace Laba4
 {
     internal class CreateItem
     {
-        private const int _rightBorder = 12;
+        private const int RightBorder = 12;
 
         public static Collection.AgronomistRecord CreateNewItem()
         {
@@ -21,7 +21,7 @@ namespace Laba4
             applicationRate = InputExtensions.InputVariable();
 
             Console.WriteLine("Input date entry (0-12)");
-            dateEntry = InputExtensions.InputIntVariable(_rightBorder);
+            dateEntry = InputExtensions.InputIntVariable(RightBorder);
 
             Console.WriteLine("Input content in Volume");
             сontentInVolume = InputExtensions.InputVariable();
